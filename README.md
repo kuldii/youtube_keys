@@ -1,2 +1,9 @@
 # youtube_keys
-Berikut merupakan bahan ajar tutorial flutter pada kanal youtube tentang nested model dan provider.  Petunjuk penggunaan :  Copy folder assets ke dalam project kalian. Posisi folder assets sejajar dengan folder lib (root). Jangan replace file pubspec.yaml kalian dengan file pubscpec.yaml ini. Buka file pubspec.yaml kalian Tambahkan font dan dependencies, mengikuti dengan file pubscpec.yaml ini. Kalian bisa replace folder lib project dengan folder lib ini atau kalian juga bisa menyalin code-codenya saja.
+
+Berikut merupakan bahan ajar tutorial flutter pada kanal youtube tentang keys. 
+
+Petunjuk penggunaan :  
+1. Jangan replace file pubspec.yaml kalian dengan file pubscpec.yaml ini.
+2. Buka file pubspec.yaml kalian
+3. Tambahkan font dan dependencies, mengikuti dengan file pubscpec.yaml ini. 
+4. Kalian bisa replace folder lib project dengan folder lib ini atau kalian juga bisa menyalin code-codenya saja.
