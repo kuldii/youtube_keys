@@ -4,25 +4,27 @@ import 'package:provider/provider.dart';
 
 import '../providers/products.dart';
 
-class ProductItem extends StatelessWidget {
-  ProductItem(this.prodId, this.title, this.date, this.color);
+class ProductItem extends StatefulWidget {
+  ProductItem(this.prodId, this.title, this.date);
 
   final String prodId, title;
 
   final DateTime date;
-  final Color color;
 
+  @override
+  _ProductItemState createState() => _ProductItemState();
+}
+
+class _ProductItemState extends State<ProductItem> {
   @override
   Widget build(BuildContext context) {
     var products = Provider.of<Products>(context, listen: false);
     return ListTile(
-      leading: CircleAvatar(
-        backgroundColor: color,
-      ),
-      title: Text("$title"),
-      subtitle: Text(DateFormat.yMMMEd().format(date)),
+      leading: CircleAvatar(),
+      title: Text("${widget.title}"),
+      subtitle: Text(DateFormat.yMMMEd().format(widget.date)),
       trailing: IconButton(
-        onPressed: () => products.deleteProduct(prodId),
+        onPressed: () => products.deleteProduct(widget.prodId),
         icon: Icon(
           Icons.delete,
           color: Colors.red,
